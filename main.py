@@ -48,15 +48,6 @@ class MainWindow(QMainWindow):
         self.url_bar.returnPressed.connect(self.navigate_to_url )
         navbar.addWidget(self.url_bar)
 
-
-
-
-
-
-
-
-
-
 app = QApplication(sys.argv)
 QApplication.setApplicationName('Ztron Power Search')
 window = MainWindow()
