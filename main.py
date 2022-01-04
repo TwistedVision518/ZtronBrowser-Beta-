@@ -5,7 +5,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
 
-*Home Screen
+#Home Screen
 
 
 class MainWindow(QMainWindow):
