@@ -1,7 +1,11 @@
+#Importing
+
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
+
+*Home Screen
 
 
 class MainWindow(QMainWindow):
@@ -12,13 +16,17 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.browser)
         self.showMaximized()
 
-        # navigation
+        #Navigation
+        
         navbar = QToolBar()
         self.addToolBar(navbar)
+        
+        #Back Button
 
         back_btn = QAction('◁', self)
         back_btn.triggered.connect(self.browser.back)
         navbar.addAction(back_btn)
+        
         #foward button
 
         forward_btn = QAction('▷', self)
